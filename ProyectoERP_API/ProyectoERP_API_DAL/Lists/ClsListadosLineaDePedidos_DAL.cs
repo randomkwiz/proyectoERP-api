@@ -11,7 +11,12 @@ namespace ProyectoERP_API_DAL.Lists
 {
     public class ClsListadosLineaDePedidos_DAL
     {
-        
+     
+        /// <summary>
+        /// Obtiene las lineas de pedido de un pedido dada la id del pedido
+        /// </summary>
+        /// <param name="codigoPedido"></param>
+        /// <returns></returns>
         public List<clsLineaPedido> getLineasPedidoDeUnPedido(int codigoPedido)
         {
             clsMyConnection miConexion = new clsMyConnection();
